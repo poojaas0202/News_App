@@ -6,7 +6,7 @@ const NewsBoard = ({ category }) => { // Destructure props to access category
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    let url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=bdf12e5f06d249189a7da59c518ad55c`;
     fetch(url)
       .then(response => response.json())
       .then(data => setArticles(data.articles))
